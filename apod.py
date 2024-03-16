@@ -14,7 +14,6 @@ def get_extension_link(link):
 
 
 def fetch_apond_images():
-    nasa_token = os.environ['NASA_TOKEN']
     url = 'https://api.nasa.gov/planetary/apod'
     params = {
         "api_key": nasa_token,
@@ -32,6 +31,7 @@ def fetch_apond_images():
 def main():
     load_dotenv()
     fetch_apond_image()
+    nasa_token = os.environ['NASA_TOKEN']
 
 
 if __name__ == "__main__":
