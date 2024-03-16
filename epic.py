@@ -13,6 +13,7 @@ def epic_images(nasa_token):
         "count": count
     }
     response = requests.get(url, params=params)
+    response.raise_for_status()
     for epic_images in response.json():
         epic_date = epic_images['date']
         epic_date = datetime.fromisoformat(epic_date).strftime("%Y/%m/%d")
