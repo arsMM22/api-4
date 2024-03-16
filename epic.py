@@ -5,8 +5,7 @@ from dowloand_image import download_image
 from dotenv import load_dotenv
 
 
-def epic_images():
-    nasa_token = os.environ['NASA_TOKEN']
+def epic_images(nasa_token):
     url = 'https://api.nasa.gov/EPIC/api/natural/image'
     params = {
         "api_key": nasa_token,
@@ -25,6 +24,7 @@ def epic_images():
 def main():
     load_dotenv()
     epic_image()
+    nasa_token = os.environ['NASA_TOKEN']
 
 
 if __name__ == "__main__":
