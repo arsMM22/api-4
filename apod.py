@@ -21,6 +21,7 @@ def fetch_apond_images(nasa_token):
         "count": count
     }
     response = requests.get(url, params=params)
+    response.raise_for_status()
     for nasa_image in response.json():
         if nasa_image.get("media_type") == 'image':
             nasa_link_image = nasa_image.get('hdurl') or nasa_image.get('url')
