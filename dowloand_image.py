@@ -1,9 +1,9 @@
 import requests
 
  
-def download_image(url,filename, params=None):
+def download_image(url,filepath, params=None):
     response = requests.get(url, params=params)
     response.raise_for_status()
 
-    with open(filename, 'wb') as file:
+    with open(filepath, 'wb') as file:
         file.write(response.content)
