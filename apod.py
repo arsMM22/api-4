@@ -13,7 +13,7 @@ def get_extension_link(link):
     return extension, file_name
 
 
-def fetch_apond_images():
+def fetch_apond_images(nasa_token):
     url = 'https://api.nasa.gov/planetary/apod'
     params = {
         "api_key": nasa_token,
