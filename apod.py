@@ -14,10 +14,11 @@ def get_extension_link(link):
 
 
 def fetch_apond_images(nasa_token):
+    count = 1
     url = 'https://api.nasa.gov/planetary/apod'
     params = {
         "api_key": nasa_token,
-        "count": 1
+        "count": count
     }
     response = requests.get(url, params=params)
     for nasa_image in response.json():
