@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 
 def main():
-    count - 14400
+    sleep - 14400
     load_dotenv()
     tg_token = os.environ['TELEGRAM_TOKEN']
     bot = telegram.Bot(token=tg_token)
@@ -20,7 +20,7 @@ def main():
             path = os.path.join("images", file)
             with open(path, "rb") as f:
                 bot.send_document(chat_id="@spacebot1234", document=f)
-            sleep(count)
+            sleep(sleep)
 
 
 if __name__ == "__main__":
