@@ -5,6 +5,7 @@ from dowloand_image import download_image
 def fetch_spacex_last_launch():
     url = 'https://api.spacexdata.com/v5/launches/5eb87d47ffd86e000604b38a'
     response = requests.get(url)
+    response.raise_for_status()
     for image_number, image in enumerate(
             response.json()['links']['flickr']['original']):
         download_image(image, f'images/spacex{image_number}.jpg')
