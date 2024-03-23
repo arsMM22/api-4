@@ -32,9 +32,8 @@ def fetch_apond_images(nasa_token):
 
 def main():
     load_dotenv()
-    fetch_apond_image()
     nasa_token = os.environ['NASA_TOKEN']
-
+    fetch_apond_image(nasa_token)
 
 if __name__ == "__main__":
     main()
