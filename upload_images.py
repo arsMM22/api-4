@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 
 def main():
-    sleep - 14400
+    sleep = 14400
     load_dotenv()
     tg_chat_id = os.environ['TG_CHAT_ID']
     tg_token = os.environ['TELEGRAM_TOKEN']
