@@ -25,9 +25,9 @@ def epic_images(nasa_token):
 
 def main():
     load_dotenv()
-    epic_image()
     nasa_token = os.environ['NASA_TOKEN']
-
+    epic_images(nasa_token)
+    
 
 if __name__ == "__main__":
     main()
