@@ -30,6 +30,7 @@ python upload_image.py
  ```
  NASA_API_KEY = "nasa_token"
  TG_TOKEN = "bot_Token"
+ TG_CHAT_ID = "@название вашего телеграмм канала"
  ```
  Получить токен NASA_API_KEY можно на сайте [NASA](https://www.nasa.gov/). Получить [TG_TOKEN](https://t.me/BotFather) у `отца ботов`
  # Цель проекта
